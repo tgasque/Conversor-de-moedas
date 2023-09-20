@@ -31,6 +31,15 @@ function convertValues(){
         }).format(inputCurrencyValue / libraToday)
     }
 
+      if(currencySelect.value=="bitcoin") {
+
+        otherCurrencies.innerHTML = new Intl.NumberFormat("en", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrecyValue / bitcoinToday)
+    
+    }
+
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style:"currency",
         currency:"BRL"
